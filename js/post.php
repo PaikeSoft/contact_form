@@ -1,6 +1,6 @@
 <?php
 if ( isset($_POST['arr']) ) {
-	require($_SERVER['DOCUMENT_ROOT'].'/wp-load.php');
+	require('../../../../wp-load.php');
 	
 	//create settings array from plugin "settings page"
 	$settings = $wpdb->get_results('SELECT * FROM `'.$wpdb->prefix.'cform_settings`');
